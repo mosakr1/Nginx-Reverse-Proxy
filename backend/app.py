@@ -2,11 +2,14 @@ import os
 import requests
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+from prometheus_flask_exporter import PrometheusMetrics
 
 app = Flask(__name__)
 CORS(app)
 
 API_KEY = os.getenv("RAPIDAPI_KEY")
+metrics = PrometheusMetrics(app)
+metrics.info('app_info', 'Application info', version='1.0.0')
 
 @app.route("/weather")
 def get_weather():
