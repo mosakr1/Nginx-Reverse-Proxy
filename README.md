@@ -44,7 +44,7 @@ This project demonstrates a **complete DevOps workflow** using a simple Weather 
 
 | Layer        | Tool / Technology |
 |---------------|-------------------|
-| **Frontend**  | React, HTML, CSS, JS |
+| **Frontend**  | HTML, CSS, JS |
 | **Backend**   | Flask, Python, Requests |
 | **Proxy**     | Nginx |
 | **Monitoring**| Prometheus, Grafana, Node Exporter |
@@ -78,11 +78,11 @@ This project demonstrates a **complete DevOps workflow** using a simple Weather 
 │
 ├── frontend/
 │   ├── Dockerfile
-│   ├── package.json
-│   └── src/
+│   ├── script.js
+│   └── index.html
 │
 ├── nginx/
-│   └── default.conf
+│   └── nginx.conf
 │
 ├── prometheus/
 │   └── prometheus.yml
