@@ -44,7 +44,7 @@ This project demonstrates a **complete DevOps workflow** using a simple Weather 
 
 | Layer        | Tool / Technology |
 |---------------|-------------------|
-| **Frontend**  | React, HTML, CSS, JS |
+| **Frontend**  | HTML, CSS, JS |
 | **Backend**   | Flask, Python, Requests |
 | **Proxy**     | Nginx |
 | **Monitoring**| Prometheus, Grafana, Node Exporter |
@@ -78,11 +78,11 @@ This project demonstrates a **complete DevOps workflow** using a simple Weather 
 │
 ├── frontend/
 │   ├── Dockerfile
-│   ├── package.json
-│   └── src/
+│   ├── script.js
+│   └── index.html
 │
 ├── nginx/
-│   └── default.conf
+│   └── nginx.conf
 │
 ├── prometheus/
 │   └── prometheus.yml
@@ -110,7 +110,7 @@ RAPIDAPI_KEY=your_rapidapi_key_here
 
 ### 3️⃣ Build & Run with Docker Compose
 ```bash
-docker compose up -d --build
+docker-compose up -d --build
 ```
 
 ### 4️⃣ Access the services
@@ -155,12 +155,6 @@ The GitHub Actions pipeline performs:
 5. 📦 Ready for deployment
 
 Workflow file: `.github/workflows/ci-cd.yml`
-
----
-
-## 📸 Example Screenshots
-
-_(You can add screenshots from the frontend UI or Grafana dashboard here.)_
 
 ---
 
